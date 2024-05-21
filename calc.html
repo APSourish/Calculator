@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background: #000;
+            padding: 10px;
+            
+        }
+        td{
+            /* border: 2px solid; */
+            font-size: 25px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            text-align: center;
+            color: white;
+            background: #181818;
+            
+        }
+        td:hover{
+            cursor: pointer;
+        }
+        td:active{
+            background-color:#5d5d5d;
+        }
+        .a1{
+            /* color: rgb(47, 255, 0); */
+            color: orange;
+        }
+        #a2{
+            height: 50px;
+            width: 229px;
+            background-color:#000;
+            color: white;
+            text-align: right;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="a2">
+    <table>
+        <tr>
+        
+            <td style="color: red;" onclick="c()">C</td>
+            <td class="a1" id="m1" onclick="a()">( )</td>
+            <td class="a1" id="m2" onclick="b()">%</td>
+            <td class="a1" id="m3" onclick="d()">/</td>
+        </tr>
+        <tr>
+            <td onclick="e()">7</td>
+            <td onclick="f()">8</td>
+            <td onclick="g()">9</td>
+            <td class="a1" onclick="h()">X</td>
+        </tr>
+        <tr>
+            <td  onclick="I()">4</td>
+            <td  onclick="j()">5</td>
+            <td  onclick="k()">6</td>
+            <td class="a1" onclick="l()">-</td>
+        </tr>
+        <tr>
+            <td  onclick="m()">1</td>
+            <td  onclick="n()">2</td>
+            <td  onclick="o()">3</td>
+            <td class="a1" onclick="p()">+</td>
+        </tr>
+        <tr>
+            <td  onclick="q()">+/-</td>
+            <td  onclick="r()">0</td>
+            <td  onclick="s()">.</td>
+            <td style="background-color: orange " onclick="t()">=</td>
+        </tr>
+    </table>
+</body>
+<script>
+    function c(){
+        document.getElementById('a2').value = ""
+    }
+    function a(){
+        document.getElementById('a2').value +="( )"
+    }
+    
+    function b(){
+        document.getElementById('a2').value +="%"
+    }
+    
+    function d(){
+        document.getElementById('a2').value +="/"
+    }
+    
+    function e(){
+        document.getElementById('a2').value +="7"
+    }
+    function f(){
+        document.getElementById('a2').value +="8"
+    }
+    function g(){
+        document.getElementById('a2').value +="9"
+    }
+    function h(){
+        document.getElementById('a2').value +=" * "
+    }
+    function I(){
+        document.getElementById('a2').value +="4"
+    }
+    function j(){
+        document.getElementById('a2').value +="5"
+    }
+    function k(){
+        document.getElementById('a2').value +="6"
+    }
+    function l(){
+        document.getElementById('a2').value +="-"
+    }
+    function m(){
+        document.getElementById('a2').value +="1"
+    }
+    function n(){
+        document.getElementById('a2').value +="2"
+    }
+    function o(){
+        document.getElementById('a2').value +="3"
+    }
+    function p(){
+        document.getElementById('a2').value +="+"
+    }
+    function q(){
+        document.getElementById('a2').value +="+/-"
+    }
+    function r(){
+        document.getElementById('a2').value +="0"
+    }
+    function s(){
+        document.getElementById('a2').value +="."
+    }
+    function t(){
+        z=document.getElementById('a2').value 
+        a=eval(z)
+        document.getElementById('a2').value=a
+    }
+    
+    
+</script>
+</html>
